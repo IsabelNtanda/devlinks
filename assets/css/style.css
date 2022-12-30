@@ -21,7 +21,6 @@
 --surface-color-hover:rgba(0, 0, 0, 0.02);
 --highlight-color:rgba(0, 0, 0, 0.1);
 --switch-bg-url:url('..//images/sun.svg');
-
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -29,6 +28,7 @@ body * {
 }
 body {
   background: var(--bg-url) no-repeat top center/cover;
+   height: 100vh;
 }
 #container {
   width:100%;
@@ -130,4 +130,16 @@ footer{
 padding: 24px 0;
 text-align: center;
 font-size: 14px;
+}
+
+/* media queries */
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url:url(../images/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url:url(../images/bg-desktop-light.jpg);
+  }
 }
