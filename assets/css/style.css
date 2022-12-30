@@ -20,7 +20,8 @@ body {
   padding: 24px;
 }
 #profile img {
-  width: 112px;
+  width: 90px;
+  border-radius: 50%;
 }
 #profile p {
   font-weight: 500;
@@ -55,8 +56,20 @@ ul li a:hover {
 }
  #social-links{
 display: flex;
-gap: 36px;
+gap: 16px;
 padding:24px 0;
 font-size: 24px;
 justify-content: center;
+}
+#social-links a{
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 16px;
+transition:background .2s;
+border-radius: 50%;
+}
+#social-links a:hover{
+cursor: pointer;
+background-color: rgba(255, 255, 255, 0.2);
 }
